@@ -108,6 +108,7 @@ orientation parallel to y-axis (O=+Y)).
 
 ```python
 from spatialmath import SE3
+from mpl_toolkits.mplot3d import Axes3D
 
 T = SE3(0.8, 0.2, 0.1) * SE3.OA([0, 1, 0], [0, 0, -1])
 q_pickup, *_ = robot.ikunc(T)   # solve IK, ignore additional outputs
